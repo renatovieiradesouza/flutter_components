@@ -12,7 +12,9 @@ class ContainerDecorationShadowsWidget extends StatelessWidget {
         children: <Widget>[
           ButtonIcon(),
           //Container(height: 10,), // Uma maneira de dar espaçamento
-          SizedBox(height: 70,), // Outra maneira de dar espaçamento
+          SizedBox(
+            height: 70,
+          ), // Outra maneira de dar espaçamento
           ButtonText()
         ],
       ),
@@ -34,9 +36,8 @@ class ButtonIcon extends StatelessWidget {
               BoxShadow(
                   color: Colors.black.withOpacity(0.7),
                   offset: Offset(4, 4),
-                blurRadius: 8,
-                spreadRadius: 0
-              )
+                  blurRadius: 8,
+                  spreadRadius: 0)
             ]),
         width: double.infinity,
         height: 50,
@@ -57,7 +58,7 @@ class ButtonText extends StatelessWidget {
       //Veja tbm outros métodos da constante EdgeInsets, como .all(), .fromLTRB() ou .symmetric()
       child: Container(
         decoration: BoxDecoration(
-          //Sempre usar o decorations para definição de cores e etc
+            //Sempre usar o decorations para definição de cores e etc
             color: Colors.black,
             borderRadius: BorderRadius.circular(5.0),
             boxShadow: <BoxShadow>[
@@ -65,8 +66,7 @@ class ButtonText extends StatelessWidget {
                   color: Colors.orange.withOpacity(0.7),
                   offset: Offset(4, 4),
                   blurRadius: 8,
-                  spreadRadius: 0
-              )
+                  spreadRadius: 0)
             ]),
         width: double.infinity,
         height: 50,

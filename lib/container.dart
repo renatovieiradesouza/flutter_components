@@ -4,14 +4,18 @@ import 'package:flutter/material.dart';
 class ContainerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 1000, // Tamanho Container pai
-      height: 300,
-      color: Colors.blue,
+    return SafeArea(
       child: Container(
-        width: 20, //Tamanho Container filho
-        color: Colors.red,
-        height: 100,
+        width: 1000, // Tamanho Container pai
+        color: Colors.blue,
+        child: Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            width: 20, //Tamanho Container filho
+            color: Colors.red,
+            height: 100,
+          ),
+        ),
       ),
     );
   }

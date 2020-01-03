@@ -3,17 +3,20 @@ import 'package:flutter/material.dart';
 //Criar botoes personalizado com texto, icon e color
 
 class ButtonTextIcon extends StatelessWidget {
-
   final Color colorBtn;
   final Text text;
   final IconData icon;
   final Color colorText;
   final Color colorIcon;
 
-  const ButtonTextIcon({Key key,
-    this.colorBtn = Colors.grey, this.text = const Text('Default'),
-    this.icon = Icons.do_not_disturb_alt, this.colorText = Colors.white,
-    this.colorIcon = Colors.white}) : super(key: key);
+  const ButtonTextIcon(
+      {Key key,
+      this.colorBtn = Colors.grey,
+      this.text = const Text('Default'),
+      this.icon = Icons.do_not_disturb_alt,
+      this.colorText = Colors.white,
+      this.colorIcon = Colors.white})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -44,9 +47,8 @@ class ButtonTextIcon extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 4, //Defini quantas colunas deve ocupar
-              child: text
-            ),
+                flex: 4, //Defini quantas colunas deve ocupar
+                child: text),
           ],
         ),
       ),

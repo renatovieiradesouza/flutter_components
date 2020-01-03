@@ -65,40 +65,41 @@ class ButtonTextIcon extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: Container(
-          decoration: BoxDecoration(
-              //Sempre usar o decorations para definição de cores e etc
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(5.0),
-              boxShadow: <BoxShadow>[
-                BoxShadow(
-                    color: Colors.black.withOpacity(0.7),
-                    offset: Offset(4, 4),
-                    blurRadius: 8,
-                    spreadRadius: 0)
-              ]),
-          width: double.infinity,
-          height: 50,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Expanded(
-                flex: 1,
-                child: Icon(
-                  Icons.whatshot,
-                  color: Colors.redAccent,
-                ),
+        decoration: BoxDecoration(
+            //Sempre usar o decorations para definição de cores e etc
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(5.0),
+            boxShadow: <BoxShadow>[
+              BoxShadow(
+                  color: Colors.black.withOpacity(0.7),
+                  offset: Offset(4, 4),
+                  blurRadius: 8,
+                  spreadRadius: 0)
+            ]),
+        width: double.infinity,
+        height: 50,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Expanded(
+              flex: 1,
+              child: Icon(
+                Icons.whatshot,
+                color: Colors.redAccent,
               ),
-              Expanded(
-                flex: 4, //Defini quantas colunas deve ocupar
-                child: Text(
-                  'Adicionar',
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                      color: Colors.black.withOpacity(0.8), fontSize: 18),
-                ),
+            ),
+            Expanded(
+              flex: 4, //Defini quantas colunas deve ocupar
+              child: Text(
+                'Adicionar',
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.black.withOpacity(0.8), fontSize: 18),
               ),
-            ],
-          ),),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
@@ -140,7 +141,7 @@ class ExpandedExample extends StatelessWidget {
               ),
               Expanded(
                 child: Icon(
-                  Icons.star ,
+                  Icons.star,
                   color: Colors.yellowAccent,
                 ),
               ),

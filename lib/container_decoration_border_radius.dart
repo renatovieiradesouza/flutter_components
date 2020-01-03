@@ -13,7 +13,8 @@ class ContainerDecorationBorderRadiusWidget extends StatelessWidget {
           ButtonIcon(),
           //Container(height: 10,), // Uma maneira de dar espaçamento
           //SizedBox(height: 20,), // Outra maneira de dar espaçamento
-          ButtonText()],
+          ButtonText()
+        ],
       ),
     );
   }
@@ -22,22 +23,21 @@ class ContainerDecorationBorderRadiusWidget extends StatelessWidget {
 class ButtonIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return
-      Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-        child: Container(
-          decoration: BoxDecoration( //Sempre usar o decorations para definição de cores e etc
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+      child: Container(
+        decoration: BoxDecoration(
+            //Sempre usar o decorations para definição de cores e etc
             color: Colors.redAccent,
-            borderRadius: BorderRadius.circular(5.0)
-          ),
-          width: double.infinity,
-          height: 50,
-          child: Icon(
-            Icons.add_box,
-            color: Colors.white,
-          ),
+            borderRadius: BorderRadius.circular(5.0)),
+        width: double.infinity,
+        height: 50,
+        child: Icon(
+          Icons.add_box,
+          color: Colors.white,
         ),
-      );
+      ),
+    );
   }
 }
 
@@ -45,7 +45,8 @@ class ButtonText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10), //Veja tbm outros métodos da constante EdgeInsets, como .all(), .fromLTRB() ou .symmetric()
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+      //Veja tbm outros métodos da constante EdgeInsets, como .all(), .fromLTRB() ou .symmetric()
       child: Container(
         width: double.infinity,
         height: 50,

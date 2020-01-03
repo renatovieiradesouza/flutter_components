@@ -13,7 +13,8 @@ class PaddingSizeboxWidget extends StatelessWidget {
           ButtonIcon(),
           //Container(height: 10,), // Uma maneira de dar espaçamento
           //SizedBox(height: 20,), // Outra maneira de dar espaçamento
-          ButtonText()],
+          ButtonText()
+        ],
       ),
     );
   }
@@ -22,19 +23,18 @@ class PaddingSizeboxWidget extends StatelessWidget {
 class ButtonIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return
-      Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-        child: Container(
-          width: double.infinity,
-          height: 50,
-          color: Colors.redAccent,
-          child: Icon(
-            Icons.add_box,
-            color: Colors.white,
-          ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+      child: Container(
+        width: double.infinity,
+        height: 50,
+        color: Colors.redAccent,
+        child: Icon(
+          Icons.add_box,
+          color: Colors.white,
         ),
-      );
+      ),
+    );
   }
 }
 
@@ -42,7 +42,8 @@ class ButtonText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10), //Veja tbm outros métodos da constante EdgeInsets, como .all(), .fromLTRB() ou .symmetric()
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+      //Veja tbm outros métodos da constante EdgeInsets, como .all(), .fromLTRB() ou .symmetric()
       child: Container(
         width: double.infinity,
         height: 50,

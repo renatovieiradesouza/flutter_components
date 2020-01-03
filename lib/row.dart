@@ -12,9 +12,13 @@ class RowWidget extends StatelessWidget {
         children: <Widget>[
           ButtonIcon(),
           //Container(height: 10,), // Uma maneira de dar espaçamento
-          SizedBox(height: 70,), // Outra maneira de dar espaçamento
+          SizedBox(
+            height: 70,
+          ), // Outra maneira de dar espaçamento
           RowExample(),
-          SizedBox(height: 30,),
+          SizedBox(
+            height: 30,
+          ),
           ButtonTextIcon()
         ],
       ),
@@ -36,9 +40,8 @@ class ButtonIcon extends StatelessWidget {
               BoxShadow(
                   color: Colors.black.withOpacity(0.7),
                   offset: Offset(4, 4),
-                blurRadius: 8,
-                spreadRadius: 0
-              )
+                  blurRadius: 8,
+                  spreadRadius: 0)
             ]),
         width: double.infinity,
         height: 50,
@@ -51,43 +54,42 @@ class ButtonIcon extends StatelessWidget {
   }
 }
 
-
 class ButtonTextIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: Container(
-        decoration: BoxDecoration(
-          //Sempre usar o decorations para definição de cores e etc
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(5.0),
-            boxShadow: <BoxShadow>[
-              BoxShadow(
-                  color: Colors.black.withOpacity(0.7),
-                  offset: Offset(4, 4),
-                  blurRadius: 8,
-                  spreadRadius: 0
-              )
-            ]),
-        width: double.infinity,
-        height: 50,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Icon(
-              Icons.whatshot,
-              color: Colors.redAccent,
-            ),
-            SizedBox(width: 20,),
-            Text(
-              'Adicionar',
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.black.withOpacity(0.8)),
-            ),
-          ],
-        )
-      ),
+          decoration: BoxDecoration(
+              //Sempre usar o decorations para definição de cores e etc
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(5.0),
+              boxShadow: <BoxShadow>[
+                BoxShadow(
+                    color: Colors.black.withOpacity(0.7),
+                    offset: Offset(4, 4),
+                    blurRadius: 8,
+                    spreadRadius: 0)
+              ]),
+          width: double.infinity,
+          height: 50,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Icon(
+                Icons.whatshot,
+                color: Colors.redAccent,
+              ),
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                'Adicionar',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.black.withOpacity(0.8)),
+              ),
+            ],
+          )),
     );
   }
 }
@@ -96,8 +98,7 @@ class RowExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child:
-      Row(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Container(
@@ -107,9 +108,7 @@ class RowExample extends StatelessWidget {
             ),
             width: 50,
             height: 50,
-            decoration: BoxDecoration(
-                color: Colors.cyan
-            ),
+            decoration: BoxDecoration(color: Colors.cyan),
           ),
           Container(
             child: Icon(
@@ -118,20 +117,13 @@ class RowExample extends StatelessWidget {
             ),
             width: 50,
             height: 50,
-            decoration: BoxDecoration(
-                color: Colors.indigo
-            ),
+            decoration: BoxDecoration(color: Colors.indigo),
           ),
           Container(
-            child: Icon(
-              Icons.star,
-              color: Colors.yellowAccent
-            ),
+            child: Icon(Icons.star, color: Colors.yellowAccent),
             width: 50,
             height: 50,
-            decoration: BoxDecoration(
-                color: Colors.amberAccent
-            ),
+            decoration: BoxDecoration(color: Colors.amberAccent),
           )
         ],
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'button_text_icon.dart';
+
+import 'desacoplamentos/button_text_icon.dart';
 
 class DesacoplamentoWidget extends StatelessWidget {
   @override
@@ -16,9 +17,7 @@ class DesacoplamentoWidget extends StatelessWidget {
             colorIcon: Colors.white,
             text: Text(
               'New Realse',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18),
+              style: TextStyle(color: Colors.white, fontSize: 18),
             ),
             colorText: Colors.white,
           ),
@@ -28,9 +27,7 @@ class DesacoplamentoWidget extends StatelessWidget {
             colorIcon: Colors.white,
             text: Text(
               'Update',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18),
+              style: TextStyle(color: Colors.white, fontSize: 18),
             ),
             colorText: Colors.white,
           ),
@@ -40,9 +37,7 @@ class DesacoplamentoWidget extends StatelessWidget {
             colorIcon: Colors.white,
             text: Text(
               'Sair',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18),
+              style: TextStyle(color: Colors.white, fontSize: 18),
             ),
             colorText: Colors.white,
           ),
