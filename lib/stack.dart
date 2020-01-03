@@ -12,12 +12,12 @@ class StackWidget extends StatelessWidget {
         alignment: Alignment.center,
         children: <Widget>[
           Container(color: Colors.redAccent),
-          Container(color: Colors.yellow, width: 50, height: 50,)
+          Container(color: Colors.yellow, width: 50, height: 50,),
+          Container(color: Colors.red, width: 20, height: 20,),
+          Container(color: Colors.white, width: 10, height: 10,),
+          Container(color: Colors.red, width: 5, height: 5,),
         ],
       ),
     );
   }
 }
-
-//Recomendado é tornar seus parametros de funcoes sempre objetos, assim vc tem todo
-//o poder do Flutter e fica mais fluído usar suas classes
